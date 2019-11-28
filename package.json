@@ -1,6 +1,6 @@
 {
   "name": "twitter_archiver",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "archives a twitter account",
   "bin": "bin/tarch",
   "main": "dest/cjs/index.js",
@@ -14,6 +14,19 @@
     "bundle": "rollup -c ; chmod 755 bin/tarch"
   },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohfunk/tarch.git"
+  },
+  "author": {
+    "name": "Mohammed Alhaytham",
+    "email": "mohfunk@pm.me",
+    "url": "https://mohfunk.com"
+  },
+  "keywords": [
+    "twitter",
+    "archive"
+  ],
   "devDependencies": {
     "@babel/cli": "^7.7.4",
     "@babel/core": "^7.7.4",
