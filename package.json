@@ -9,7 +9,7 @@
   "types": "dest/types/index.d.ts",
   "scripts": {
     "clean": "rm -rf dest ; rm -rf bin",
-    "test": "mocha -r ts-node/register tests/**/*.test.ts",
+    "test": "ts-mocha -p tests/tsconfig.test.json tests/**/*.test.ts",
     "build": "babel src --out-dir dest/babel --extensions \".ts,.tsx\" --source-maps inline",
     "bundle": "rollup -c ; chmod 755 bin/tarch"
   },
@@ -34,6 +34,7 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
     "@babel/preset-typescript": "^7.7.4",
+    "@babel/register": "^7.7.4",
     "@types/chai": "^4.2.5",
     "@types/chalk": "^2.2.0",
     "@types/lodash": "^4.14.149",
@@ -52,6 +53,7 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-progress": "^1.1.1",
     "rollup-plugin-uglify": "^6.0.3",
+    "ts-mocha": "^6.0.0",
     "ts-node": "^8.5.2",
     "typescript": "^3.7.2"
   },

@@ -1,9 +1,7 @@
-import { expect } from "chai";
-import * as fs from "../src/util/fs";
+const expect = require("chai").expect;
 
 describe("test", function() {
   it("1", () => {
-    fs.mkdir("data");
     expect(1).to.equal(1);
   });
 });
