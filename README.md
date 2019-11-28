@@ -7,6 +7,9 @@
 <h5 align="center">
     <a href="https://github.com/mohfunk/tarch/releases">Download</a>
 </h5>
+
+[![Build Status](https://travis-ci.org/mohfunk/tarch.svg?branch=master)](https://travis-ci.org/mohfunk/tarch)
+
 This tools archives a twitter account, written to archive my deceased cousin's twitter account.
 
 Contributions welcome.
