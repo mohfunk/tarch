@@ -4,8 +4,8 @@ import e from "../err";
 let errs = e.errs.fs.mkdir;
 let err = e.err;
 export enum mkdirOptions {
-  NONE,
-  RECURSIVE
+  NONE = 0,
+  RECURSIVE = 1
 }
 
 const _mkdirRec = (dir: string) => {
@@ -44,13 +44,7 @@ const mkdir = (
         default:
           throw err(errs.invOpt);
       }
-    } catch (e) {
-      if (e) {
-        if (e.code !== "ENOENT") {
-          throw err(e);
-        }
-      }
-    }
+    } catch (e) {}
 
     let baseDir = p.dirname(d);
     if (!fs.existsSync(baseDir) && !(opt === mkdirOptions.RECURSIVE)) {

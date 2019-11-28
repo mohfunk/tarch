@@ -8,10 +8,11 @@
   "browser": "dest/iife/index.js",
   "types": "dest/types/index.d.ts",
   "scripts": {
+    "addon": "cp ./addon/*.js ./node_modules/nightmare/lib/ ; cp ./addon/index.d.ts ./node_modules/@types/nightmare/",
     "clean": "rm -rf dest ; rm -rf bin",
-    "test": "ts-mocha -p tests/tsconfig.test.json tests/**/*.test.ts",
-    "build": "babel src --out-dir dest/babel --extensions \".ts,.tsx\" --source-maps inline",
-    "bundle": "rollup -c ; chmod 755 bin/tarch"
+    "test": "yarn addon ; ts-mocha -p tests/tsconfig.test.json tests/**/*.test.ts",
+    "build": "yarn addon ; babel src --out-dir dest/babel --extensions \".ts,.tsx\" --source-maps inline",
+    "bundle": "yarn addon ; rollup -c ; chmod 755 bin/tarch"
   },
   "license": "MIT",
   "repository": {
