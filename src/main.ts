@@ -1,3 +1,4 @@
 import lg from "./util/log";
+import sh from "./util/sh";
 
-lg.info("info");
+lg.pass(sh.pwd());

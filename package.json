@@ -41,7 +41,6 @@
     "@types/lowdb": "^1.0.9",
     "@types/mocha": "^5.2.7",
     "@types/nightmare": "^2.10.4",
-    "@types/shelljs": "^0.8.6",
     "@types/shortid": "^0.0.29",
     "@types/yargs": "^13.0.3",
     "chai": "^4.2.0",
@@ -62,7 +61,6 @@
     "lodash": "^4.17.15",
     "lowdb": "^1.0.0",
     "nightmare": "^3.0.2",
-    "shelljs": "^0.8.3",
     "shortid": "^2.2.15",
     "yargs": "^15.0.2"
   }

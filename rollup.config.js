@@ -11,7 +11,6 @@ const name = "tarch";
 
 export default {
   input: "./src/main.ts",
-  external: [],
 
   plugins: [
     resolve({
@@ -26,7 +25,8 @@ export default {
     execute("echo DONE!")
   ],
 
-  output: [{
+  output: [
+    {
       file: pkg.bin,
       format: "cjs",
       banner: "#!/usr/bin/env node"
